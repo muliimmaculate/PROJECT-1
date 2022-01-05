@@ -1,0 +1,679 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+p{
+    font-weight: 300;
+    color: #111;
+}
+body{
+    min-height: 1000px;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(pexels-esrageziyor-10251874.jpg);
+    background-size: cover;
+}
+
+.banner .content{
+    max-width: 900px;
+    text-align: center;
+}
+.banner .content h1{
+    font-size: 5em;
+    color: #fff;
+    text-transform: capitalize;
+}
+.banner .content p{
+    font-size: 1em;
+    color: #fff;
+}
+.btn{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.btn:hover{
+    letter-spacing: 6px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px  100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+}
+header.sticky{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+header .logo{
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header.sticky .logo{
+    color: #111;
+}
+header .navigation{
+    position: relative;
+    display: flex;
+    text-transform: capitalize;
+}
+header .navigation li{
+    list-style: none;
+    margin-left: 35px;
+
+}
+header .navigation li a{
+    text-decoration: none;
+    color: bisque;
+    font-weight: 300;
+}
+header.sticky .navigation li a{
+    color: #111;
+}
+header .navigation li a:hover{
+    color: #ff0157;
+}
+section{
+    padding: 100px;
+}
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col50{
+    position: relative;
+    width: 48%;
+}
+.titletext{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+.titletext span{
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.row .col50 .imgBx{
+    position: relative;
+    width: 100%;
+   /*min-height: 300px;*/
+   height: 100%;
+}
+.row .col50 .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+}
+.destinations .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.destinations .content .box{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow:  0 5px 35px rgba(0,0,0,0.08);
+
+}
+.destinations .content .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.destinations .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.destinations .content .box .text{
+    padding: 15px 0 5px;
+}
+.destinations .content .box .text h3{
+    font-weight: 400;
+    color: #111;
+    text-transform: capitalize;
+}
+.Box{
+    width: 350px;
+    height: 50px;
+    background-color: wheat;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.Box > i {
+    font-size: 20px;
+    color: #111;
+
+}
+.Box > input{
+    flex: 1;
+    height: 40px;
+    border: none;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.flight-booking{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(pexels-esrageziyor-10251874.jpg);
+    background-size: cover;
+}
+
+.booking-form-box{
+    width: 450px;
+    margin: 2% auto 0;
+    border: 2px solid #ff0157;
+    height: 75vh;
+   
+}
+
+.radio-btn{
+    margin: 0 70px;
+
+
+}
+.radio-btn.btn{ 
+    margin: 50px 10px 50px 0;
+    box-shadow: none;
+}
+.radio-btn.btn::after{
+    content: '';
+    height: 30px;
+    width: 30px;
+    top: -5px;
+    left: -5px;
+    background-color: red;
+    position: relative;
+    display: inline-block;
+    border: 3px solid black;
+    visibility: visible;
+    border-radius: 70%;
+}
+.radio-btn .btn:checked::after{
+    content: '';
+    background-color: black;
+    transition: 0.5s;
+}
+.radio-btn span{
+    color: black;
+    margin-right: 7px;
+    font-size: 16px;
+}
+.booking-form{
+    padding: 0px;
+    margin: 45px;
+    width: 40%;
+  
+}
+.booking-form label{
+    margin: 0px 30px;
+    font-size: 16px;
+    color: black;
+    padding: 14px;
+}
+input::placeholder{
+    color: black!important;
+}
+.input-grp{
+    display: inline-block;
+    width: 100px;
+}
+.form-control{
+    font-size: 15px!important;
+    border-radius: 2px!important;
+    color: black!important;
+    background: transparent!important;
+    box-shadow: none!important;
+}
+.select-date::-webkit-inner-spin-button,
+.select-date::-webkit-outer-spin-button{
+-webkit-appearance: none;
+margin: 0;
+}
+.select-date::-webkit-calender-picker-indicator{
+    background: transparent!important;
+}
+.custom-select{
+    color: black!important;
+    font-size: 15px!important;
+    border: 2px solid black!important;
+    box-shadow: none!important;
+    border-radius: 0!important;
+    background: transparent!important;
+}
+.custom-select option{
+    width: 100%;
+}
+
+.flight{
+    width: 100%;
+    padding: 8px;
+}
+.feedback{
+    background: url(pexels-gagan-cambow-1343337.jpg);
+    background-size: cover;
+}
+.white .titletext, .white p{
+    color: #fff;
+}
+.feedback .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.feedback .content .box{
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.feedback .content .box .imgBx{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.feedback .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.feedback .content .box .text{
+    text-align: center;
+}
+.feedback .content .box .text p{
+    color: #666;
+    font-style: italic;
+}
+.feedback .content .box .text h3{
+    margin-top: 22px;
+    color: #ff0157;
+    font-size: 1em;
+    font-weight: 700;
+}
+footer{
+    color: #111;
+    background: url(pexels-esrageziyor-10251874.jpg);
+    width: 100%;
+     margin-bottom: 30px;
+
+}
+
+.main-content{
+    display: flex;
+}
+.main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+.box h4{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.box .Content{
+    margin: 20px 0 0 0;
+}
+
+.left .Content p{
+    text-align: justify;
+}
+.left .Content .social {
+   margin: 20px 0 0 0;
+  
+}
+.left .Content .social a{
+    padding: 0 4px;
+   
+}
+.left .Content .social a:nth-child(1){
+    color: #4267b2;
+}
+.left .Content .social a:nth-child(2){
+    color: #1DA1F2;
+}
+.left .Content .social a:nth-child(3){
+    color: #E13062;
+}
+.left .Content .social a:nth-child(4){
+    color: #FF0000;
+}
+.left .Content .social a span{
+    height: 50px;
+    width: 50px;
+    background: #fff;
+    line-height: 50px;
+    text-align: center;
+    font-size: 21px;
+    border-radius: 50px;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+    margin: o 5px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.3);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.left .Content .social a span:hover{
+    width: 90px;
+}
+.left .Content .social a span :hover:nth-child(1)
+{
+    background: #4267b2;
+}
+.left .Content .social a span:hover:nth-child(2)
+{
+    background: #1da1f2;
+}
+.left .Content .social a span:hover:nth-child(3)
+{
+    background: #e1306c;
+}
+.left .Content .social a span:hover:nth-child(4)
+{
+    background: #ff0000;
+}
+.center .Content .fas{
+    font-size: 1.4rem;
+    height: 48px;
+    width: 48px;
+    line-height: 48px;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.center .Content .fas:hover{
+    background: white;
+}
+.center .Content .text{
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-left: 10px;
+}
+.center .Content .phone{
+    margin: 10px 0;
+}
+
+.right .Content{
+    font-size: 18px;
+    text-align: justify;
+}
+.right .Content .text{
+    font-size: 16px;
+    margin: 8px;
+}
+.right .Content input,textarea{
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    resize: none;
+    outline: none;
+    border: 1px solid #555;
+}
+.right form .text{
+    font-size: 16px;
+    margin-bottom: 2px;
+    color: #656565;
+}
+.right form .msg{
+    margin-top: 10px;
+}
+.right form input, .right form textarea{
+    width: 100%;
+    font-size: 1.1rem;
+    background: #fff;
+    padding-left: 10px;
+    border: 1px solid #222222;
+}
+.right form input:focus,
+.right form textarea:focus{
+    outline-color: #3498db;
+}
+.right form .Btn{
+    margin-top: 10px;
+
+}
+.right form .Btn button{
+    height: 40px;
+    width: 90%;
+    border: none;
+    outline: none;
+    background: #ff0157;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+.right form .Btn button:hover{
+    background: #fff;
+}
+
+.copyright{
+    padding: 5px;
+    border-top: 1px solid rgba(0,0,0,0.3);
+    text-align: center;
+    font-size: 16px;
+}
+.copyright p{
+    color: #111;
+    font-weight: 500;
+}
+
+
+
+
+@media (max-width: 991px) {
+    header,
+    header.sticky{
+        padding: 10px 20px;
+    }
+    header .navigation{
+        display: none;
+    }
+header .navigation.active{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+header .navigation.active{
+    width: 100%;
+    height: calc(100%-68px);
+    position: fixed;
+    top: 68px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+}
+header .navigation li{
+    list-style: none;
+    margin-left: 0;
+}
+header .navigation li a{
+    text-decoration: none;
+    color: #111;
+    font-size: 26px;
+    font-weight: 300;
+}
+.menuToggle{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(menu.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    color: black;
+}
+.menuToggle.active{
+    background: url(close.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header.sticky .menuToggle{
+    filter: invert(1);
+}
+section{
+    padding: 20px;
+}
+.banner .content h2{
+    font-size: 3em;
+    color: #fff;
+}
+.row{
+    flex-direction: column;
+}
+.row .col50{
+    position: relative;
+    width: 100%;
+    
+}
+.row .col50 .imgBx{
+   height: 300px;
+   margin-top: 20px;
+}
+.destinations .content{
+   
+    margin-top: 20px;
+}
+.destinations .content .box{
+    margin: 10px;
+}
+.destinations .content .box .imgBx{
+    height: 260px;
+}
+.title{
+text-align: center;
+}
+.titletext{
+    font-size: 2em;
+    font-weight: 300;
+    margin-bottom: 15px;
+    line-height: 1.5em;
+}
+.feedback .content .box{
+    margin: 10px;
+    padding: 20px;
+   
+}
+.flight-booking{
+    width: 95%;
+    height: 90vh;
+}
+.booking-form-box{
+    width: 380px;
+    height: 72vh;
+}
+
+.booking-form label{
+    margin: 0px 10px;
+    font-size: 16px;
+    padding: 5px;
+}
+.radio-btn span{
+    margin-right: 2px;
+    font-size: 14px;
+ 
+}
+.flight{
+    font-size: 12px;
+    padding: 1px;
+
+}
+@media (max-width: 991px){
+.banner .content h1{
+    font-size: 2.2em;
+    color: #fff;
+}
+}
+}
+@media screen and (max-width: 900px){
+    footer{
+        position: relative;
+        bottom: 0px;
+    }
+    .main-content{
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+    .main-content .box{
+        margin: 5px 0;
+    }
+}

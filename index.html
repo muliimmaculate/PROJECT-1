@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width,initial-scale=1.0">
+        <title>travelagency</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="file:///C:/Users/Immaculate/Downloads/fontawesome-free-5.15.4-web/css/all.css">
+
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">TRAVELAGENCY<i class="fas fa-globe"></i></a>
+            <div class="menuToggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                <li><a href="#banner"onclick="toggleMenu();">home</a></li>
+                <li><a href="#about"onclick="toggleMenu();">about</a></li>
+                <li><a href="#destinations"onclick="toggleMenu();">destinations</a></li>
+                <li><a href="#flight-booking"onclick="toggleMenu();">flight-booking</a></li>
+                <li><a href="#feedback"onclick="toggleMenu();">feedback</a></li>
+                <li><a href="#contact"onclick="toggleMenu();">contact</a></li>
+            </ul>
+        </header>
+        <section class="banner" id="banner">
+            <div class="content">
+                <h1>lets travel</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aperiam in excepturi perferendis ratione, deleniti culpa enim ipsam totam expedita beatae officia ex vel doloremque unde dolorum animi, quasi adipisci!</p>
+                <a href="#" class="btn">sign up</a>
+                <a href="#" class="btn">sign in</a>
+
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="row">
+                <div class="col50">
+                    <h2 class="titletext"><span>A</span>bout Us</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam quae, esse expedita exercitationem impedit beatae velit nesciunt officiis reiciendis repellendus provident maiores voluptates neque deleniti error, harum, optio culpa explicabo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero porro cumque perferendis soluta consequatur repudiandae assumenda, eaque, dolore quo facere voluptatum quos obcaecati velit perspiciatis iusto quisquam. Dolorum, quibusdam eos!<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor porro molestiae qui repellat laborum. Delectus adipisci exercitationem nulla eum. Reprehenderit quae cum voluptas delectus corrupti magnam saepe minus sunt incidunt.</p>
+
+                </div>
+                <div class="col50">
+                    <div class="imgBx">
+                        <img src="img.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="destinations" id="destinations">
+            <div class="title">
+                <h2 class="titletext"><span>D</span>estinations</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="content">
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="pexels-martin-damboldt-814499.jpg">
+                    </div>
+                    <div class="text">
+                        <h3>Bali</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="pexels-dmitry-limonov-9122391.jpg">
+                    </div>
+                    <div class="text">
+                        <h3>zanzibar(beach)</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="pexels-pixabay-219998.jpg">
+                    </div>
+                    <div class="text">
+                        <h3>Diani beach(sunset)</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="pexels-sven-huls-3801347.jpg">
+                    </div>
+                    <div class="text">
+                        <h3> Southafrica</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="pexels-pixabay-259547.jpg">
+                    </div>
+                    <div class="text">
+                        <h3>Maasai mara</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="pexels-taryn-elliott-3889919.jpg">
+                    </div>
+                    <div class="text">
+                        <h3>somewhere in africa</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="pexels-taryn-elliott-3889891.jpg">
+                    </div>
+                    <div class="text">
+                        <h3>Sahara Desert</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="title">
+                <div class="Box">
+                <i class="fa fa-search-location">  
+                </i><input type="text" class="search-input" placeholder="search for places"></i>
+            
+            </div>
+        </section>
+    
+
+        <section class="flight-booking" id="flight-booking">
+            <div class="title">
+                <h2 class="titletext"><span>F</span>light-booking</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <div class="booking-form-box">
+            <div class="radio-btn">
+                <input type="radio" class="btn" name="check" checked="checked"><span>RoundTrip</span>
+                <input type="radio" class="btn" name="check"><span>OneWay</span>
+                <input type="radio" class="btn" name="check"><span>TwoWay</span>
+            </div>
+            <div class="booking-form">
+                <label>Flying From</label>
+                <input type="text" class="form-control" placeholder="City or Airport" required>
+                <label>Flying To</label>
+                <input type="text" class="form-control" placeholder="City or Airport"required>
+                <div class="input-grp">
+                    <label>Departure</label>
+                    <input type="date" class="form-control select-date" required>
+                </div>
+                <div class="input-grp">
+                    <label>Arrival</label>
+                    <input type="date" class="form-control select-date" required>
+                </div>
+                <div class="input-grp">
+                    <label>Adults</label>
+                    <input type="number" class="form-control" value="1" required>
+                </div>
+                <div class="input-grp">
+                    <label>Children</label>
+                    <input type="number" class="form-control" value="0" required>
+                </div>
+                <div class="input-grp">
+                    <label>Travel Class</label>
+                    <select class="custom-select">
+                        <option value="1">Economy Class</option>
+                        <option value="2">Business Class</option>
+                    </select>
+                </div>
+                <div class="input-grp">
+                    <button type="button" class="btn btn-primary flight">Show Flight</button>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section class="feedback" id="feedback">
+            <div class="title white">
+                <h2 class="titletext"><span>F</span>eedback</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit!</p>
+            </div>
+            <div class="content">
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="DSC_2854.jpg">
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem architecto voluptate excepturi quasi quis perspiciatis, asperiores unde. At ad quas, perferendis expedita soluta beatae sapiente nesciunt sequi. Animi, pariatur provident.</p>
+                        <h3>someone</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="IMG-20211122-WA0012.jpg">
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem architecto voluptate excepturi quasi quis perspiciatis, asperiores unde. At ad quas, perferendis expedita soluta beatae sapiente nesciunt sequi. Animi, pariatur provident.</p>
+                        <h3>someone</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="profile_picture_20210809215019.jpg">
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem architecto voluptate excepturi quasi quis perspiciatis, asperiores unde. At ad quas, perferendis expedita soluta beatae sapiente nesciunt sequi. Animi, pariatur provident.</p>
+                        <h3>someone</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="IMG-20211030-WA0001.jpg">
+                    </div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem architecto voluptate excepturi quasi quis perspiciatis, asperiores unde. At ad quas, perferendis expedita soluta beatae sapiente nesciunt sequi. Animi, pariatur provident.</p>
+                        <h3>someone</h3>
+                    </div>
+                </div>
+            </div>
+ 
+        </section>
+
+      <footer>
+          <section class="contact" id="contact">
+          <div class="main-content">
+              <div class="left box">
+                  <h4>Services</h4>
+                  <div class="Content">
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque neque sed ratione dolores minima, nisi deserunt magni modi facilis ducimus nostrum cupiditate fuga optio eaque temporibus fugit atque totam ipsa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laborum nostrum quidem recusandae commodi. Optio eaque deleniti quasi laudantium quas velit enim illum veniam adipisci, nisi cum fugit? Sapiente, fugiat?</p>
+                      <div class="social">
+                          <a href="#"><span class="fab fa-facebook-f">@travel</span></a>
+                          <a href="#"><span class="fab fa-twitter">@travel</span></a>
+                          <a href="#"><span class="fab fa-instagram">@travel</span></a>
+                          <a href="#"><span class="fab fa-youtube">@travel</span></a>
+                      </div>
+                  </div>
+              </div>
+        <div class="center box">
+        <h4>Address</h4>
+        <div class="Content">
+            <div class="place">
+                <span class="fas fa-map-marker-alt"></span>
+                <span class="text">Kenya, Nairobi</span>
+            </div>
+            <div class="phone">
+                <span class="fas fa-phone-alt"></span>
+                <span class="text">+012-345678901</span>
+            </div>
+            <div class="email">
+                <span class="fas fa-envelope"></span>
+                <span class="text">stubbornprof@evans.com</span>
+            </div>
+        </div>
+    </div>
+    <div class="right box">
+        <h4>Contact Us</h4>
+        <div class="Content">
+            <form action="#">
+                <div class="email">
+                    <div class="text">Email <i class="fas fa-envelope"></i></div>
+                    <input type="email" required>
+                </div>
+                <div class="msg">
+                    <div class="text">Message <i class="fas fa-comment"></i> </div>
+                    <textarea rows="2" cols="25" required></textarea>
+                </div>
+                <div class="Btn">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+          </div>
+
+          </section>
+          <div class="copyright">
+              <p><i class="far fa-copyright">2021.All Rights Reserved</i></p>
+          </div>
+      </footer>
+
+
+<script type="text/javascript">
+    window.addEventListener('scroll', function(){
+        const header = document.querySelector('header');
+        header.classList.toggle("sticky", window.scrollY > 0);
+    });
+
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+</script>
+
+    </body>
+    </html>
